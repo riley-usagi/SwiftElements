@@ -4,7 +4,7 @@
 
 > *Note:* Чтобы оформление Playground-файла было как на изображении ниже (если вдруг оно отключено), вам необходимо его включить в меню: **Editor -> Show Rendered Markup**
 
-![](example.png)
+![](../example.png)
 
 # Roadmap
 
