@@ -1,4 +1,4 @@
-# Elements.playground
+# Swift Elements
 Учебное пособие по основам языка программирования **Swift** в формате **Playground**
 
 
