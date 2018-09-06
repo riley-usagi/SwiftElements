@@ -17,7 +17,7 @@ protocol Novice {
 
 // Базовое поведение Аколита.
 protocol Acolyte {
-  func heal()
+  func heal(hero: Hero)
 }
 //: Наш герой будет аколитом, поэтому он должен иметь все свойства и методы как Новичка так и Аколита
 //: > Особенностью Xcode является то, что если имплементировать объекту *Протокол*, то вы автоматически получите предложение применить к объекту всю функциональность указанного *Протокола*.
@@ -33,15 +33,15 @@ class Hero: Novice, Acolyte {
     self.hp += 10
   }
   
-  func heal() {
+  func heal(hero: Hero) {
     hp += 150
   }
 }
 
 let acolyte = Hero(hp: 777)
 
-acolyte.firstAid()  // hp = 787
-acolyte.heal()      // hp = 937
+acolyte.firstAid()          // hp = 787
+acolyte.heal(hero: acolyte) // hp = 937
 //: ### Домашнее задание
 //: Создайте пару протоколов по примеру.
 
